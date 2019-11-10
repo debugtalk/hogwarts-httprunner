@@ -20,15 +20,17 @@ class TestSingleAPI(unittest.TestCase):
         single_api_yaml = os.path.join(
             os.path.dirname(__file__), "api", "get_homepage.yml")
         result = run_yaml(single_api_yaml)
-        self.assertEqual(result, True)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0], True)
 
         single_api_yaml = os.path.join(
             os.path.dirname(__file__), "api", "get_login.yml")
-        result = run_yaml(single_api_yaml)
-        self.assertEqual(result, True)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0], True)
 
     def test_run_single_yaml_with_jsonpath(self):
         single_api_yaml = os.path.join(
             os.path.dirname(__file__), "api", "api_login_submit.yml")
         result = run_yaml(single_api_yaml)
-        self.assertEqual(result, True)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0], True)

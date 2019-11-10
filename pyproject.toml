@@ -8,6 +8,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.5"
 requests = "^2.22.0"
+pyyaml = "^5.1.2"
 
 [tool.poetry.dev-dependencies]
 coverage = "^4.5.4"

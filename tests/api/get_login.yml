@@ -1,0 +1,6 @@
+url: "https://mubu.com/login"
+method: "GET"
+headers:
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+verify: False

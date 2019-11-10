@@ -1,8 +1,10 @@
 import jsonpath
-import requests
+from requests import sessions
 
 from hogwarts_httprunner.loader import load_yaml
 from hogwarts_httprunner.validate import is_api, is_testcase
+
+session = sessions.Session()
 
 
 def extract_json_field(resp, json_field):
@@ -23,7 +25,7 @@ def run_api(api_info):
 
     method = request.pop("method")
     url = request.pop("url")
-    resp = requests.request(method, url, **request)
+    resp = session.request(method, url, **request)
 
     validator_mapping = api_info["validate"]
 

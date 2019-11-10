@@ -13,5 +13,5 @@ install:
   - pip install poetry
   - poetry install -vvv
 script:
-  - coverage run -m unittest discover
+  - coverage run --source=tet_mubu_login -m unittest discover
   - coverage report

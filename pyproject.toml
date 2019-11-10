@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hogwarts-httprunner"
+version = "0.1.0"
+description = ""
+authors = ["debugtalk"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.22.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

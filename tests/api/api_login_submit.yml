@@ -4,7 +4,8 @@ request:
     headers:
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-    data: "phone=18613143458&password=3AnZNk%26iTteM2PYl1T%24h&remember=true"
+    data: "phone=18613143458&password=3AnZNk%26iTteM2PYl1T%24p&remember=true"
     verify: False
 validate:
     status_code: 200
+    $.code: 0

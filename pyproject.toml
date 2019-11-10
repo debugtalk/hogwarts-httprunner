@@ -10,6 +10,7 @@ python = "^3.5"
 requests = "^2.22.0"
 
 [tool.poetry.dev-dependencies]
+coverage = "^4.5.4"
 
 [build-system]
 requires = ["poetry>=0.12"]
